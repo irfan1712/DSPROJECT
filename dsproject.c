@@ -55,8 +55,8 @@ int main()
     printf("\t\t\tRECURSIVE PROGRAMS\n\n\n");
     int num, choice, i = 0, c, num1, num2;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+ while(1)
+{   
     blue();
     printf("1. GCD\n");
     yellow();
@@ -78,6 +78,8 @@ int main()
             break;
         case 2:
             yellow();
+printf("Enter a number: ");
+    scanf("%d", &num);
             for(c=1; c<=num; c++)
             {
                 printf("%d ", fib(i));
@@ -85,6 +87,8 @@ int main()
             }
             break;
         case 3:
+printf("Enter a number: ");
+    scanf("%d", &num);
             green();
             printf("Factorial of %d is %d\n", num, fact(num));
             break;
@@ -92,5 +96,6 @@ int main()
             red();
             printf("Invalid choice\n");
     }
+}
     return 0;
 }
